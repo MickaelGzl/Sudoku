@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Sudoku</h1>
+    <div class="optionCreate" id="optionCreate">
+      <div>
+        <label for="selection">Choisissez une difficulté: </label>
+        <select id="selection">
+          <option value="easy" selected>Facile</option>
+          <option value="medium">Normal</option>
+          <option value="hard">Difficile</option>
+        </select>
+      </div>
+      <button type="button" id="createGrid" class="button">Créer</button>
+    </div>
+
+    <table id="sudoku" hidden></table>
+
+    <button type="button" id="verifySolution" hidden class="button">
+      Valider la grille
+    </button>
+
+    <p id="result"></p>
+
+    <script text="javascript" src="public/scripts/index.js"></script>
+  </body>
+</html>
